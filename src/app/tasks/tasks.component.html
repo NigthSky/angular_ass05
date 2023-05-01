@@ -1,0 +1,33 @@
+<div class="container">
+    <div *ngFor="let index of [1,2,3]" class="tasks"> 
+        <h2 id="task{{index}}">Task#{{index}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <span>Marked task as:</span>
+        <div class="task-mark">
+            <input 
+                type="radio" 
+                name="task{{index}}" 
+                id="1"
+                value="red" 
+                (change)="onSelect($event)"
+            >
+            <label>Pending</label>
+            <input 
+                type="radio" 
+                name="task{{index}}" 
+                id="2"
+                value="blue" 
+                (change)="onSelect($event)"
+            >
+            <label>Ongoing</label>
+            <input 
+                type="radio" 
+                name="task{{index}}" 
+                id="3"
+                value="green" 
+                (change)="onSelect($event)"
+            >
+            <label>Completed</label>
+        </div>
+    </div>
+</div>

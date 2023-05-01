@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    margin: 15px;
+}
+.container > div{
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+}
+.tasks {
+    margin: 5px;
+}
+    h2 {
+        font-size: 30px;
+        border: 2px solid black;
+        padding: 10px;
+        /* background-color: red; */
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 20px;
+        margin: 0 15px 30px 15px;
+    }
+    span {
+        margin: 0 15px;
+        font-size: 25px;
+    }
+    .task-mark {
+        display: flex;
+        margin-top: 15px;
+    }
+    .task-mark > input {
+        width: 100%;
+    }
+    label {
+        font-size: 20px;
+    }
